@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      position: relative;
+      height: 100vh;
+      background-color: hsl(0, 0%, 8%);
+    }
+
+    .card {
+      width: 350px;
+      height: auto;
+      padding: 20px;
+      background-color: hsl(0, 0%, 12%);
+      color: #ffffff;
+      border-radius: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    header .name {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    header .location {
+      color: hsl(75, 94%, 57%);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+
+    header .text {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .socials p {
+      background-color: hsl(0, 0%, 20%);
+      margin: 10px;
+      width: 280px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .socials p:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: black;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90vw;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="card">
+    <header>
+      <img src="./assets/images/avatar-jessica.jpeg" alt="">
+      <p class="name">  Jessica Randall </p>
+      <p class="location">London, United Kingdom</p>
+      <p class="text"> "Front-end developer and avid reader."</p>
+    </header>
+    <div class="socials">
+      <p>Github</p>
+      <p>Frontend Mentor</p>
+      <p>Linkedin</p>
+      <p>Twitter</p>
+      <p>Instagram</p>
+    </div>
+  </div>  
+</body>
+</html>
